@@ -14,6 +14,10 @@ int main() {
   cin >> friend_sex;
   cout << "Enter the age of your friend: ";
   cin >> age;
+  
+  if(age <= 0 || age >= 110)
+    simple_error("you're kidding!");
+  
   cout << "\n\n\nDear " << first_name << ",\n";
   cout << "How are you doing buddy? I haven't heard about you for a while, what's cookin good lookin? ;)\n";
   cout << "Have you seen "  << friend_name << " lately?\n";
@@ -24,8 +28,7 @@ int main() {
     cout << "If you see " << friend_name << " please ask her to call me.";
     
   cout << "\nI hear you just had a birthday and you are " << age << " years old.";
-  if(age <= 0 || age >= 110)
-    simple_error("you're kidding!");
+
     
   if(age < 12)
     cout << " Next year you'll be " << age+1 << ".";
