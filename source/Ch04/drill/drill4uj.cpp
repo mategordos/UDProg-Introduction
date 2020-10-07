@@ -60,6 +60,13 @@ int main()
 			numArray.push_back(num);
 //			unitArray.push_back("m");
 		}
+		
+		if(num == *max_element(numArray.begin(),numArray.end()) and numArray.size() != 1)
+		    cout << num << " m: the largest so far" << endl;
+		    
+		if(num == *min_element(numArray.begin(),numArray.end()) and numArray.size() != 1) 
+		    cout << num << " m: the smallest so far" << endl;
+		
 	}//end of while
 	if(numArray.size() > 1)
 	{
