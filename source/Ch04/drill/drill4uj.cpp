@@ -25,16 +25,9 @@ int main()
 		cout << "Press any key to continue, or press | to close the program." << endl;
 		cin >> exit;
 		if(exit == "|") break;
+		
 		cout << "Enter a number.\n";
-		cin >> num
-		if (cin.fail())
-		{
-			cin.clear();
-			cin.ignore();
-			cout << "Please enter a valid value";
-			cin >> num;
-		}
-
+		cin >> num;
 
 		cout << "Enter one of these: cm, m, in, ft\n";
 		cin >> unit;
@@ -89,7 +82,7 @@ int main()
 		{
 			sum+=numArray[i];
 		}
-		cout << sum << endl;
+		cout << sum  << " m" << endl; 
 	}
 	return 0;
 }
