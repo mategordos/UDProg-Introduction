@@ -41,24 +41,24 @@ int main()
 		{
 			num=num/100;
 			numArray.push_back(num);
-			unitArray.push_back("m");
+//			unitArray.push_back("m");
 		}
 		if(unit == "m")
 		{
 			numArray.push_back(num);
-			unitArray.push_back("m");
+//			unitArray.push_back("m");
 		}
 		if(unit == "in")
 		{
 			num=num*0.0254;
 			numArray.push_back(num);
-			unitArray.push_back("m");
+//			unitArray.push_back("m");
 		}
 		if(unit == "ft")
 		{
 			num=((num*12)*2.54)/100;
 			numArray.push_back(num);
-			unitArray.push_back("m");
+//			unitArray.push_back("m");
 		}
 	}//end of while
 	if(numArray.size() > 1)
@@ -69,10 +69,10 @@ int main()
 	sort(numArray);
 	if(numArray.size() > 1)
 	{
-		cout << "The sorted array: " << endl;
+		cout << "\nThe sorted array: " << endl;
 		for (int i = 0; i < numArray.size(); ++i)
 		{
-			cout << numArray[i] << " " << unitArray[i] << "\n"; 
+			cout << numArray[i] << " m"  << "\n"; 
 		}
 	}
 	if(numArray.size() > 1)
