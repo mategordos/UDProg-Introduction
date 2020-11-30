@@ -33,9 +33,6 @@ void swap_cr(const int& a ,const int& b)
 */
 
 
-
-
-
 int main() 
 {
 	int x = 7;
